@@ -1,0 +1,85 @@
+:root {
+  --fontColor: #fff;
+  --bgColor: #0a0a23;
+  --red: #f00;
+  --green: #0f0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  color: var(--fontColor);
+  background-color: var(--bgColor);
+}
+
+.container {
+  width: 450px;
+  height: fit-content;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+#price {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+#change-due {
+  height: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.error {
+  color: var(--red);
+}
+
+.input,
+.btn {
+  padding: 0.5rem;
+}
+
+.input {
+  width: 100px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.btn {
+  margin: 0.5rem 0;
+  background-color: var(--bgColor);
+  color: var(--fontColor);
+  font-weight: bold;
+  border-color: var(--fontColor);
+  border-style: solid;
+}
+
+.btn:hover {
+  background-color: var(--fontColor);
+  color: var(--bgColor);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#cash-drawer {
+  padding: 1rem;
+}
